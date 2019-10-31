@@ -1,0 +1,29 @@
+uuid: 6fe83df7-9142-4934-ae68-66b0f4fe7f67
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.content_dashboard_moderation_state
+  module:
+    - facets
+    - system
+  theme:
+    - bartik
+id: contentdashboardmoderationstate
+theme: bartik
+region: sidebar_first
+weight: -7
+provider: null
+plugin: 'facet_block:content_dashboard_moderation_state'
+settings:
+  id: 'facet_block:content_dashboard_moderation_state'
+  label: 'Content Dashboard: Moderation state'
+  provider: facets
+  label_display: visible
+  block_id: contentdashboardmoderationstate
+visibility:
+  request_path:
+    id: request_path
+    pages: /content-dashboard
+    negate: false
+    context_mapping: {  }

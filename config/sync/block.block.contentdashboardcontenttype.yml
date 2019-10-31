@@ -1,0 +1,29 @@
+uuid: f0821f3f-78a5-4f5d-815f-2833a0d04dfa
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.content_dashboard_content_type
+  module:
+    - facets
+    - system
+  theme:
+    - bartik
+id: contentdashboardcontenttype
+theme: bartik
+region: sidebar_first
+weight: -9
+provider: null
+plugin: 'facet_block:content_dashboard_content_type'
+settings:
+  id: 'facet_block:content_dashboard_content_type'
+  label: 'Content Dashboard: Content type'
+  provider: facets
+  label_display: visible
+  block_id: contentdashboardcontenttype
+visibility:
+  request_path:
+    id: request_path
+    pages: /content-dashboard
+    negate: false
+    context_mapping: {  }

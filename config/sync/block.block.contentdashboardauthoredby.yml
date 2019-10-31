@@ -1,0 +1,29 @@
+uuid: 738fc3d3-4489-4414-b61d-d5f6f46ac49c
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.content_dashboard_authored_by
+  module:
+    - facets
+    - system
+  theme:
+    - bartik
+id: contentdashboardauthoredby
+theme: bartik
+region: sidebar_first
+weight: -5
+provider: null
+plugin: 'facet_block:content_dashboard_authored_by'
+settings:
+  id: 'facet_block:content_dashboard_authored_by'
+  label: 'Content Dashboard: Authored by'
+  provider: facets
+  label_display: visible
+  block_id: contentdashboardauthoredby
+visibility:
+  request_path:
+    id: request_path
+    pages: /content-dashboard
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,29 @@
+uuid: 8488ddbb-9531-4a50-b627-8f985f89a217
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.content_original_language
+  module:
+    - facets
+    - system
+  theme:
+    - bartik
+id: contentoriginallanguage
+theme: bartik
+region: sidebar_first
+weight: -6
+provider: null
+plugin: 'facet_block:content_original_language'
+settings:
+  id: 'facet_block:content_original_language'
+  label: 'Content: Original language'
+  provider: facets
+  label_display: visible
+  block_id: contentoriginallanguage
+visibility:
+  request_path:
+    id: request_path
+    pages: /content-dashboard
+    negate: false
+    context_mapping: {  }

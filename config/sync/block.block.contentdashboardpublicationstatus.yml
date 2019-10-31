@@ -1,0 +1,29 @@
+uuid: 3ad9842f-f633-492b-a81a-69000ddc3cd0
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.content_dashboard_publication_status
+  module:
+    - facets
+    - system
+  theme:
+    - bartik
+id: contentdashboardpublicationstatus
+theme: bartik
+region: sidebar_first
+weight: -8
+provider: null
+plugin: 'facet_block:content_dashboard_publication_status'
+settings:
+  id: 'facet_block:content_dashboard_publication_status'
+  label: 'Content Dashboard: Publication status'
+  provider: facets
+  label_display: visible
+  block_id: contentdashboardpublicationstatus
+visibility:
+  request_path:
+    id: request_path
+    pages: /content-dashboard
+    negate: false
+    context_mapping: {  }

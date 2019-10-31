@@ -1,0 +1,12 @@
+uuid: 2ef21ee6-eb39-4a6c-9783-baf7354de009
+langcode: en
+status: true
+dependencies: {  }
+id: core_views_exposed_filter__content_dashboard_simple__page
+name: 'core_views_exposed_filter:content_dashboard_simple__page'
+filter_key: ''
+url_processor: core_views_url_processor
+breadcrumb:
+  active: false
+  before: true
+  group: false

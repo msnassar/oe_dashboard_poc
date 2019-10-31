@@ -1,0 +1,29 @@
+uuid: 8b9547bc-72aa-4a9b-9d8f-69daa1f92a6d
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.content_search_content_type
+  module:
+    - facets
+    - system
+  theme:
+    - bartik
+id: contentsearchcontenttype
+theme: bartik
+region: sidebar_first
+weight: -4
+provider: null
+plugin: 'facet_block:content_search_content_type'
+settings:
+  id: 'facet_block:content_search_content_type'
+  label: 'Content Search: Content type'
+  provider: facets
+  label_display: visible
+  block_id: contentsearchcontenttype
+visibility:
+  request_path:
+    id: request_path
+    pages: /content-search
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,29 @@
+uuid: 1f45f4fa-5e85-4f76-8a55-642508d6bd57
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.content_search_published
+  module:
+    - facets
+    - system
+  theme:
+    - bartik
+id: contentsearchpublished
+theme: bartik
+region: sidebar_first
+weight: -2
+provider: null
+plugin: 'facet_block:content_search_published'
+settings:
+  id: 'facet_block:content_search_published'
+  label: 'Content Search: Published'
+  provider: facets
+  label_display: visible
+  block_id: contentsearchpublished
+visibility:
+  request_path:
+    id: request_path
+    pages: /content-search
+    negate: false
+    context_mapping: {  }

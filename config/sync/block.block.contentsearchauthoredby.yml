@@ -1,0 +1,29 @@
+uuid: d8e2027a-12a4-40f2-a047-8811f77138b3
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.content_search_authored_by
+  module:
+    - facets
+    - system
+  theme:
+    - bartik
+id: contentsearchauthoredby
+theme: bartik
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'facet_block:content_search_authored_by'
+settings:
+  id: 'facet_block:content_search_authored_by'
+  label: 'Content search: Authored by'
+  provider: facets
+  label_display: visible
+  block_id: contentsearchauthoredby
+visibility:
+  request_path:
+    id: request_path
+    pages: /content-search
+    negate: false
+    context_mapping: {  }

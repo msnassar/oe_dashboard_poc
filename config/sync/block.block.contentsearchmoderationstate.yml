@@ -1,0 +1,29 @@
+uuid: 5f797768-872e-479b-ad7d-27d110809693
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.content_search_moderation_state
+  module:
+    - facets
+    - system
+  theme:
+    - bartik
+id: contentsearchmoderationstate
+theme: bartik
+region: sidebar_first
+weight: -1
+provider: null
+plugin: 'facet_block:content_search_moderation_state'
+settings:
+  id: 'facet_block:content_search_moderation_state'
+  label: 'Content Search: Moderation state'
+  provider: facets
+  label_display: visible
+  block_id: contentsearchmoderationstate
+visibility:
+  request_path:
+    id: request_path
+    pages: /content-search
+    negate: false
+    context_mapping: {  }

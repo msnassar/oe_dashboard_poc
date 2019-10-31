@@ -1,0 +1,29 @@
+uuid: d415a39b-e137-460d-b6f6-39681cd27e94
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.content_search_language
+  module:
+    - facets
+    - system
+  theme:
+    - bartik
+id: contentsearchlanguage
+theme: bartik
+region: sidebar_first
+weight: -3
+provider: null
+plugin: 'facet_block:content_search_language'
+settings:
+  id: 'facet_block:content_search_language'
+  label: 'Content Search: Language'
+  provider: facets
+  label_display: visible
+  block_id: contentsearchlanguage
+visibility:
+  request_path:
+    id: request_path
+    pages: /content-search
+    negate: false
+    context_mapping: {  }
