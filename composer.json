@@ -82,6 +82,11 @@
                 ".editorconfig": "../.editorconfig",
                 ".gitattributes": "../.gitattributes"
             }
+        },
+        "patches": {
+            "drupal/entity_legal": {
+                "Quick hack for CVF language": "resources/patches/quick_hack.patch"
+            },
         }
     }
 }
