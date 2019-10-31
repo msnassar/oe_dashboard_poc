@@ -84,7 +84,7 @@
             }
         },
         "patches": {
-            "drupal/entity_legal": {
+            "drupal/core_views_facets": {
                 "Quick hack for CVF language": "resources/patches/quick_hack.patch"
             },
         }
